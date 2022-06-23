@@ -1,15 +1,16 @@
-Welcome to your new dbt project!
+# DBT Snowflake
+A template project that uses DBT with Snowflake
 
-### Using the starter project
+# Project setup
+1. If you inted to use the terraform files from the project, first you need to set up some env variables
+```sh
+export TF_VAR_username=your_snowflake_username
+export TF_VAR_password=your_snowflake_password
+export TF_VAR_account=your_snowflake_account
+```
+2. You need to setup your profile in ~/.dbt
+```sh
+cat extras/profile.yml >> ~/.dbt/profiles.yml
+```
 
-Try running the following commands:
-- dbt run
-- dbt test
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices

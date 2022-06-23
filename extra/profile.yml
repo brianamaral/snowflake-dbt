@@ -1,0 +1,13 @@
+dbt_snowflake:
+  outputs:
+    dev:
+      account: your_account
+      database: DW
+      password: your_password
+      role: your_role
+      schema: TPCH
+      threads: 2
+      type: snowflake
+      user: your_user
+      warehouse: compute_wh
+  target: dev
